@@ -1,0 +1,175 @@
+/* Common Style & Utilities */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styles */
+
+header{
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    padding: 50px 0;
+}
+
+.half-width{
+    width: 50%;
+}
+
+.half-width img{
+    width: 556px;
+    height: 438px;
+    margin-right: 120px; 
+}
+
+.header-title{
+    width: 485px;
+    height: 230px;
+    margin-left: 156px;
+    margin-top: 40px;
+}
+
+.header-title h1{
+    font-weight: bold;
+    font-size: 64px;
+    color: white;
+    margin: 0;
+    margin-bottom: 27px;
+}
+.header-title a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+
+.header-title a:hover{
+    padding: 20px 48px;
+    border-radius: 15px;
+    transition: border-radius 0.8s, padding 0.8s;
+}
+
+.header-title a:hover .fa-arrow-right{
+    transform: rotate(360deg);
+    transition: transform 0.8s;
+}
+
+.fa-arrow-right{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Blogs Style */
+
+.container{
+    width: 1050px;
+    margin: 70px auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.blog{
+    width: 300px;
+    padding: 15px;
+    box-shadow: 10px 10px 20px lightgray;
+}
+
+.blog img{
+    width: 300px;
+}
+
+.blog h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.blog p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+}
+
+.logo img{
+    width: 483px;
+    height: 110px;
+}
+
+.social{
+    font-size: 15px;
+    color: #969BAB;
+    padding: 10px;
+    background-color: #d5d7df;
+    border-radius: 50%;
+    margin-left: 14px;
+    margin-bottom: 20px;
+}
+
+small{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Media Queries for Mobiles Version */
+
+@media only screen and (max-width:688px) {
+
+    header{
+        flex-direction: column;
+    }
+
+    .half-width,.header-title{
+        width: 92%;
+        margin: 0 4%;
+    }
+
+    .half-width img{
+        width: 100%;
+        margin: 0;
+    }
+
+    .header-title h1{
+        font-size: 36px;
+    }
+
+    .container{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .blog{
+        width: 95%;
+        padding: 10px 2.5%;
+        /* text-align: center; */
+    }
+
+    .blog img{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+}
+
+
+/* Media Queries for Ipads */
