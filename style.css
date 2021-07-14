@@ -21,7 +21,7 @@ header{
 
 .half-width img{
     width: 556px;
-    height: 438px;
+    height: 438px; 
     margin-right: 120px; 
 }
 
@@ -47,6 +47,11 @@ header{
     background-color: #E02C6D;
 }
 
+.fa-arrow-right{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
 .header-title a:hover{
     padding: 20px 48px;
     border-radius: 15px;
@@ -58,10 +63,6 @@ header{
     transition: transform 0.8s;
 }
 
-.fa-arrow-right{
-    margin-left: 10px;
-    font-size: 16px;
-}
 
 /* Blogs Style */
 
@@ -173,3 +174,66 @@ small{
 
 
 /* Media Queries for Ipads */
+@media only screen and (min-width:689px) and (max-width: 992px) {
+
+    header{
+        align-items: center;
+    }
+    .header-title{
+        margin: 0 20px;
+        width: 40%;
+    }
+
+    .banner{
+        width: 60%;
+    }
+
+    .header-title h1{
+        font-size: 36px;
+    }
+
+    .half-width img{
+        width: 100%;
+        margin: 0;
+    }
+
+    .container{
+        width: 92%;
+        grid-template-columns: repeat(2,1fr);
+        margin: 70px 4%;
+    }
+
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img{
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width:993px) and (max-width: 1200px)
+{
+    .header-title{
+        width: 40%;
+    }
+
+    .banner{
+        width: 60%;
+    }
+
+    .header-title h1{
+        font-size: 36px;
+    }
+
+    .half-width img{
+        width: 100%;
+        margin: 0;
+    }
+
+    .container{
+        width: 100%;
+    }
+}
