@@ -39,9 +39,11 @@ header{
 }
 
 .half-width img{
-    width: 556px;
-    height: 438px; 
-    margin-right: 120px; 
+    display: block;
+    max-width:556px;
+    max-height:456px;
+    width: auto;
+    height: auto;
 }
 
 .header-title{
@@ -171,10 +173,14 @@ header{
 }
 
 .match{
-    /* background-color: #706abd; */
     background-color: #2D25A0;
     padding: 10px;
     border-radius: 10px;
+}
+
+.match:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
 }
 
 .match-heading,.match-details{
