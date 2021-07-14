@@ -104,6 +104,7 @@ header{
 
 .blog img{
     width: 300px;
+    margin: 0;
 }
 
 .blog h3{
@@ -116,6 +117,7 @@ header{
 .blog p{
     font-size: 16px;
     font-weight: 400;
+    margin: 0;
     color: #6C6C6C;
 }
 
@@ -154,7 +156,7 @@ header{
 }
 
 .card-title a{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #433bb4;;
 }
 
@@ -169,7 +171,7 @@ header{
 }
 
 .match{
-    background-color: #453db4;
+    background-color: #706abd;
     padding: 10px;
     border-radius: 10px;
 }
@@ -178,7 +180,7 @@ header{
     margin: 0;
     margin-bottom: 10px;
 }
-.match-heading{
+.match-heading,.fa-flag{
     font-size: 28px;
 }
 
@@ -225,6 +227,7 @@ small{
 
 @media only screen and (max-width:688px) {
 
+    /* Header */
     header{
         flex-direction: column;
     }
@@ -243,6 +246,7 @@ small{
         font-size: 36px;
     }
 
+    /* Players profile blogs */
     #blogs{
         width: 90%;
         grid-template-columns: repeat(1,1fr);
@@ -258,6 +262,8 @@ small{
         width: 100%;
     }
 
+    /* news and match fixtures */
+
     .container{
         width: 90%;
         margin: 70px auto;
@@ -271,6 +277,8 @@ small{
         flex-direction: column;
         text-align: center;
     }
+
+    /* Footer */
 
     footer{
         width: 100%;
@@ -286,6 +294,7 @@ small{
 /* Media Queries for Ipads */
 @media only screen and (min-width:689px) and (max-width: 992px) {
 
+    /* Header */
     header{
         align-items: center;
     }
@@ -307,12 +316,14 @@ small{
         margin: 0;
     }
 
+    /* Player profile blogs */
     #blogs{
         width: 92%;
         grid-template-columns: repeat(2,1fr);
         margin: 70px 4%;
     }
 
+    /* News and Match Fixtures */
     .container{
         width: 90%;
     }
@@ -325,6 +336,8 @@ small{
     .newses,.fixtures{
         grid-template-columns: repeat(1,1fr);
     }
+
+    /* Footer */
 
     footer{
         width: 100%;
@@ -340,6 +353,8 @@ small{
 /* Media Queries for Ipad Pro */
 @media only screen and (min-width:993px) and (max-width: 1200px)
 {
+    /* Header */
+
     .header-title{
         width: 40%;
     }
@@ -357,10 +372,13 @@ small{
         margin: 0;
     }
 
+    /* Player Profile blogs */
     #blogs{
         width: 100%;
     }
 
+    /* News and Match Fixtures */
+    
     .container{
         width: 95%;
     }
